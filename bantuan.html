@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bantuan - Litscape</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">
+          <img src="image/Litscapeg.png" alt="Litscape Logo" class="logo-img" />
+        </a>
+
+        <div class="navbar-extra">
+          <div class="search-box">
+            <input type="text" id="search-input" placeholder="Cari..." />
+            <i data-feather="search"></i>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="index.html">Beranda</a>
+          <a href="index.html#tentang">Tentang</a>
+          <a href="katalog.html">Katalog</a>
+          <a href="bantuan.html" class="active">Bantuan</a>
+          <a href="keranjang.html" class="btn-cart">Keranjang (2)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="bantuan" class="section">
+        <div class="container narrow">
+          <h2>Bantuan</h2>
+          <details>
+            <summary>Bagaimana cara memesan buku?</summary>
+            <p>
+              Pilih buku di katalog, klik Tambah, lalu buka keranjang dan tekan
+              Checkout.
+            </p>
+          </details>
+          <details>
+            <summary>Berapa lama pengiriman?</summary>
+            <p>Pengiriman memakan waktu 2 sampai 5 hari kerja.</p>
+          </details>
+          <p class="contact">
+            Butuh bantuan lain? Email ke <strong>hellocap@Litscape.id</strong>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Listcape. Semua hak dilindungi.</p>
+    </footer>
+
+    <script>
+      feather.replace();
+      document
+        .querySelector("#search-input")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            window.find(this.value);
+          }
+        });
+    </script>
+  </body>
+</html>

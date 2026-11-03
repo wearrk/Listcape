@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Beranda - Litscape</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">
+          <img src="image/Litscapeg.png" alt="Litscape Logo" class="logo-img" />
+        </a>
+
+        <nav class="menu">
+          <a href="index.html" class="active">Beranda</a>
+          <a href="index.html#tentang">Tentang</a>
+          <a href="katalog.html">Katalog</a>
+          <a href="bantuan.html">Bantuan</a>
+          <a href="keranjang.html" class="btn-cart">Keranjang (2)</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="beranda" class="hero">
+        <div class="container">
+          <h1>Read <span> beyond </span> your <span>World.</span></h1>
+          <p>
+            Temukan cerita, pengetahuan, dan perspektif baru dari berbagai
+            penjuru dunia dalam satu tempat.
+          </p>
+          <a href="katalog.html" class="btn btn-yellow">Lihat Katalog</a>
+        </div>
+      </section>
+
+      <section class="container features">
+        <div>
+          <h3>Gratis ongkir</h3>
+          <p>Untuk pembelian di atas Rp150.000.</p>
+        </div>
+        <div>
+          <h3>Pembayaran mudah</h3>
+          <p>Transfer bank dan e-wallet.</p>
+        </div>
+        <div>
+          <h3>Buku original</h3>
+          <p>Langsung dari penerbit resmi.</p>
+        </div>
+      </section>
+
+      <section id="tentang" class="section section-alt">
+        <div class="container narrow">
+          <h2>Tentang</h2>
+          <p>
+            Litscape adalah toko buku daring yang berdiri sejak 2019. Kami
+            percaya setiap orang berhak punya akses ke buku bagus tanpa harus
+            membayar mahal.
+          </p>
+          <div class="stats">
+            <div><strong>7.000+</strong><span>judul buku</span></div>
+            <div><strong>12.000+</strong><span>pembaca puas</span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2026 Listcape. Semua hak dilindungi.</p>
+    </footer>
+    <script>
+      feather.replace();
+      document
+        .querySelector("#search-input")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter") {
+            window.find(this.value);
+          }
+        });
+    </script>
+  </body>
+</html>
